@@ -5,12 +5,11 @@ from errator import __version__
 setup(
     name="errator",
     py_modules=["errator"],
-    version=__version__,
+    version="0.0.1",
     description="Errator allows you to create human-readable exception narrations",
-    author="Tom Carroll",
-    author_email="actuator@pobox.com",
-    url="https://github.com/haxsaw/errator",
-    download_url="https://github.com/haxsaw/errator/tarball/%s" % __version__,
+    author="Syrrim",
+    author_email="syrrim0@gmail.com",
+    url="https://github.com/syrrim/errator",
     keywords=["exception", "logging", "traceback", "stacktrace"],
     classifiers=[],
 )
