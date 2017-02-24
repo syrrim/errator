@@ -63,7 +63,6 @@ When I saw the upstream module, I thought it was a sensible idea, and had been
 thinking about doing something similar. However, I felt the author had brought in unneeded complexity:
     
 #. Global state
-   ~~~~~~~~~~~~
 
    Rather than attaching state to the exception, a global bank of state was
    maintained. Naturally, this brought on complexity with dealing with threads
@@ -73,7 +72,6 @@ thinking about doing something similar. However, I felt the author had brought i
    the exception instead. 
 
 #. Messing up stack traces
-   ~~~~~~~~~~~~~~~~~~~~~~~
 
    By default, the original version would interject in the middle of stack
    traces with a decorated function. Like most things, this could be configured
@@ -81,7 +79,6 @@ thinking about doing something similar. However, I felt the author had brought i
 
 
 #. Manual outputting
-   ~~~~~~~~~~~~~~~~~
 
    In order to get nice looking output, you had to manually iterate over the
    narration and output each line individually. This was purported to be
@@ -89,7 +86,6 @@ thinking about doing something similar. However, I felt the author had brought i
    uncommon a situation to make the default. 
    
 #. Manually formatting
-   ~~~~~~~~~~~~~~~~~~~
 
    No formatting of the narration would be done by default; the user was
    expected to write every character they wanted output. In the example code,
@@ -99,7 +95,6 @@ thinking about doing something similar. However, I felt the author had brought i
    user. 
 
 #. Separate functions
-   ~~~~~~~~~~~~~~~~~~
 
    This one is simple, but still silly. For some reason, the author chose to
    make the functions for decorator and context managers different, being
