@@ -33,13 +33,13 @@ Example
             with narrate("big val"):
                 raise Exception("Too large")
         else:
-            with narrate("small val")
+            with narrate("small val"):
                 raise Exception("Too small")
 
 
     @narrate()
     def f1():
-        return f2() + 1
+        return f2(7) + 1
 
     f1()
 
